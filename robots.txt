@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://olympiadchamp.github.io/sitemap.xml
+

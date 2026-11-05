@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Printable Olympiad OMR Sheet (35 Questions) | OlympiadChamp</title>
+  <meta name="description" content="Download free printable 35-question 4-bubble OMR sheet for SOF IMO, NSO, and SilverZone practice. Prepare students for offline school exams.">
+  <link rel="canonical" href="https://olympiadchamp.com/omr-practice">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @media print {
+      .no-print { display: none !important; }
+      body { background: white !important; }
+      .omr-container { border: 2px solid black !important; box-shadow: none !important; padding: 10px !important; }
+    }
+  </style>
+</head>
+<body class="bg-slate-100 text-slate-900 font-sans p-4 sm:p-8">
+
+  <div class="max-w-3xl mx-auto mb-6 no-print flex items-center justify-between">
+    <a href="index.html" class="text-xs font-bold text-indigo-600">← Back to Archive</a>
+    <button onclick="window.print()" class="px-5 py-2.5 bg-slate-900 hover:bg-slate-800 text-white font-extrabold text-xs rounded-xl shadow-md transition-transform active:scale-95 flex items-center gap-1.5">
+      🖨️ Print This OMR Sheet
+    </button>
+  </div>
+
+  <!-- OMR Sheet Box -->
+  <div class="omr-container max-w-3xl mx-auto bg-white p-6 sm:p-8 rounded-3xl border-2 border-slate-300 shadow-xl">
+    <!-- Header -->
+    <div class="text-center pb-4 border-b-2 border-slate-900">
+      <div class="text-xs font-black tracking-widest uppercase text-slate-500">Official Exam Simulation</div>
+      <h1 class="text-2xl font-black text-slate-900 tracking-tight mt-0.5">OLYMPIAD PRACTICE OMR ANSWER SHEET</h1>
+      <p class="text-xs text-slate-600 mt-1">Standard 35 Questions • 4 Options (A, B, C, D) • Use HB Pencil or Blue/Black Pen</p>
+    </div>
+
+    <!-- Candidate Info Box -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 my-6 p-4 bg-slate-50 border border-slate-300 rounded-xl text-xs">
+      <div>
+        <span class="block text-slate-500 font-bold">STUDENT NAME:</span>
+        <span class="font-semibold">____________________</span>
+      </div>
+      <div>
+        <span class="block text-slate-500 font-bold">ROLL NUMBER:</span>
+        <span class="font-semibold">____________________</span>
+      </div>
+      <div>
+        <span class="block text-slate-500 font-bold">CLASS / SECTION:</span>
+        <span class="font-semibold">Class 3 / 4 / 5</span>
+      </div>
+      <div>
+        <span class="block text-slate-500 font-bold">EXAM:</span>
+        <span class="font-semibold">IMO / NSO / IEO</span>
+      </div>
+    </div>
+
+    <!-- Instructions -->
+    <div class="p-3 bg-amber-50 border border-amber-200 rounded-xl text-[11px] text-amber-900 mb-6 flex items-center justify-between">
+      <span><strong>Correct Method:</strong> Fill the bubble completely: <span class="inline-block w-4 h-4 rounded-full bg-slate-900 align-middle ml-1"></span></span>
+      <span><strong>Wrong:</strong> ❌ Tick, Cut, or Half-filling</span>
+    </div>
+
+    <!-- 35 Bubble Grid (4 Columns) -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-2.5 text-xs">
+      <!-- Generated 35 Rows -->
+      <script>
+        const container = document.currentScript.parentElement;
+        for (let i = 1; i <= 35; i++) {
+          const row = document.createElement('div');
+          row.className = "flex items-center justify-between p-1.5 border-b border-slate-200";
+          row.innerHTML = `
+            <span class="font-bold text-slate-700 w-5">${i.toString().padStart(2, '0')}</span>
+            <div class="flex items-center gap-1.5 font-bold text-slate-600">
+              <span class="w-6 h-6 rounded-full border-2 border-slate-400 flex items-center justify-center text-[10px]">A</span>
+              <span class="w-6 h-6 rounded-full border-2 border-slate-400 flex items-center justify-center text-[10px]">B</span>
+              <span class="w-6 h-6 rounded-full border-2 border-slate-400 flex items-center justify-center text-[10px]">C</span>
+              <span class="w-6 h-6 rounded-full border-2 border-slate-400 flex items-center justify-center text-[10px]">D</span>
+            </div>
+          `;
+          container.appendChild(row);
+        }
+      </script>
+    </div>
+
+    <!-- Footer Note with Branding -->
+    <div class="mt-8 pt-4 border-t-2 border-slate-900 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-2">
+      <span>Official simulator provided by <strong>OlympiadChamp.com</strong></span>
+      <span>Get 5 Full Mock Test Papers for ₹29 on <strong>olympiadchamp.com</strong></span>
+    </div>
+  </div>
+
+</body>
+</html>
+
